@@ -1,4 +1,4 @@
-# Audio-Display
+# Audio-Level-Display
 kleine universelle Audio-Level Anzeige
 
 ## VU-Meter
@@ -28,4 +28,31 @@ So lässt sich das Display direkt auf den ESP-D1-Mini auflöten und die beiden m
 Nun nur noch den stecker mit 5V und GND verbinden und fertig:
 ![vu6](https://raw.githubusercontent.com/multigcs/audiolevel/main/images/vu6.jpg)
 
+
+## 5. Schritt
+Das ganze lässt sich per platformio kompilieren und installieren,
+dazu bitte im Netz nach entsprechenden Anleitungen schauen.
+
+In meinem Fall, unter Linux ging es recht einfach:
+```
+git clone git@github.com:multigcs/audiolevel.git
+cd audiolevel
+pip3 install platformio
+make build
+make flash
+```
+
+Das ganze kann beim ersten mal etwas länger dauern, da platformio sich die ganzen compiler und tool runterladen muss
+
+
+## BOM
+* 1x ESP-D1-mini (D1 Mini ESP8266 / WeMos D1 mini)
+* 1x OLED SSD1306 128X64
+* 2x Widerstand 10kOhm
+* 1x Widerstand 4.7kOhm
+* 1x Kondensator 33uF (16V oder besser mehr)
+
+Die Werte dürfen leicht variieren, wichtig ist das die zwei Widerstände (hier 10k) den selben wert haben.
+Die ESP-Boards gibt es unter allen möglichen bezeichnungen, unter anderem bei Amazon ab ca 4Euro/Stk. (im 3er Pack),
+das gleiche gilt für die Displays, einfach auf die Bilder achten und das die Pinbelegung passt.
 
