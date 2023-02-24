@@ -5,7 +5,7 @@ kleine universelle Audio-Level Anzeige
 ![vu1](https://raw.githubusercontent.com/multigcs/audiolevel/main/images/vu1.jpg)
 
 ## 1. Schritt
-Je einen 10kOhm Widerstand zwichen:
+Je einen 10kOhm Widerstand zwischen:
  * A0 und GND
  * A0 und 3V3
 löten
