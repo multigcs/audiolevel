@@ -42,7 +42,7 @@ make build
 make flash
 ```
 
-Das ganze kann beim ersten mal etwas länger dauern, da platformio sich die ganzen compiler und tool runterladen muss
+Das ganze kann beim ersten mal etwas länger dauern, da platformio sich die ganzen compiler und tools runterladen muss
 
 
 ## BOM
